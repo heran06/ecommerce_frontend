@@ -5,7 +5,7 @@ export default function Orders() {
   const token = localStorage.getItem("token");
 
   const fetchOrders = () => {
-    fetch("http://localhost:3000/orders", {
+    fetch("https://ecommerce-backend-zpvu.onrender.com/orders", {
       headers: { Authorization: token }
     })
       .then(res => res.json())
@@ -17,7 +17,7 @@ export default function Orders() {
   }, []);
 
   const cancelOrder = async (orderId) => {
-    await fetch(`http://localhost:3000/orders/cancel/${orderId}`, {
+    await fetch(`https://ecommerce-backend-zpvu.onrender.com/orders/cancel/${orderId}`, {
       method: "PUT",
       headers: {
         Authorization: token

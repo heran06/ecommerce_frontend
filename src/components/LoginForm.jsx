@@ -13,7 +13,7 @@ const LoginForm = () => {
 
     const password = passwordRef.current.value;
 
-    const res = await fetch("http://localhost:3000/auth/login", {
+    const res = await fetch("https://ecommerce-backend-zpvu.onrender.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),

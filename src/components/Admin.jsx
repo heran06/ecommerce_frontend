@@ -11,7 +11,7 @@ export default function Admin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const payload = { name, price: Number(price), image };
-    await fetch("http://localhost:3000/products", {
+    await fetch("https://ecommerce-backend-zpvu.onrender.com/products", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),

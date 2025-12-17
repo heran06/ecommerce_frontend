@@ -10,7 +10,7 @@ export default function Products() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/products");
+      const res = await fetch("https://ecommerce-backend-zpvu.onrender.com/products");
       const data = await res.json();
       setProducts(data);
     };

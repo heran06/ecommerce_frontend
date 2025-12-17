@@ -118,7 +118,7 @@ export default function CartPage() {
                 onClick={async () => {
                   const token = localStorage.getItem("token");
 
-                  await fetch("http://localhost:3000/orders", {
+                  await fetch("https://ecommerce-backend-zpvu.onrender.com/orders", {
                     method: "POST",
                     headers: {
                       "Content-Type": "application/json",

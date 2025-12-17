@@ -2,7 +2,7 @@ import React, { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
 
-const API = "http://localhost:3000";
+const API = "https://ecommerce-backend-zpvu.onrender.com";
 
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
